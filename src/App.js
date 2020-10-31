@@ -1,28 +1,13 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable react/button-has-type */
-/* eslint-disable no-console */
-import React, { useState } from 'react';
-import data from './data';
-import List from './List';
-
+/* eslint-disable semi */
+/* eslint-disable no-unused-vars */
+import React, { useState, useEffect } from 'react';
+import Loading from './Loading';
+import Tours from './Tours';
+// ATTENTION!!!!!!!!!!
+// I SWITCHED TO PERMANENT DOMAIN
+const url = 'https://course-api.com/react-tours-project';
 function App() {
-  const [people, setPeople] = useState(data);
-
-  return (
-    <main>
-      <section className="container">
-        <h3>{people.length} birthdays today</h3>
-        <List people={people} />
-        <button
-          onClick={() => {
-            setPeople([]);
-          }}
-        >
-          Clear All
-        </button>
-      </section>
-    </main>
-  );
+  return <h2>Tours Project Setup</h2>;
 }
 
 export default App;
